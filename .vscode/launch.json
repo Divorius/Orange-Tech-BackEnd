@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Operadores",
+            "request": "launch",
+            "mainClass": "Operadores",
+            "projectName": "Orange-Tech-BackEnd_6918a06b"
+        },
+        {
+            "type": "java",
             "name": "Launch TiposVariaveis",
             "request": "launch",
             "mainClass": "TiposVariaveis",
