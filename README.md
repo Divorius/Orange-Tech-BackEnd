@@ -1,3 +1,3 @@
-## Instruçoes
+## Instruções
 
-Esse repositorio foi criado para salvar todos os exercicios feitos durante o BootCamp Orange-Tech-BackEnd-Banco-Inter.
+Esse repositório foi criado para salvar todos os exercícios feitos durante o BootCamp Orange-Tech-BackEnd-Banco-Inter.
