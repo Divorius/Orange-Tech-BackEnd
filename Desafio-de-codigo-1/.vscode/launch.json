@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch IndustriaDaMulta",
+            "request": "launch",
+            "mainClass": "IndustriaDaMulta",
+            "projectName": "Orange-Tech-BackEnd_ec73482c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LojinhaDeDoces",
+            "request": "launch",
+            "mainClass": "LojinhaDeDoces",
+            "projectName": "Orange-Tech-BackEnd_ec73482c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeituraDaGertrudes",
+            "request": "launch",
+            "mainClass": "LeituraDaGertrudes",
+            "projectName": "Orange-Tech-BackEnd_ec73482c"
+        },
+        {
+            "type": "java",
+            "name": "Launch DownloadDePacotes",
+            "request": "launch",
+            "mainClass": "DownloadDePacotes",
+            "projectName": "Orange-Tech-BackEnd_ec73482c"
+        },
+        {
+            "type": "java",
             "name": "Launch Operadores",
             "request": "launch",
             "mainClass": "Operadores",
