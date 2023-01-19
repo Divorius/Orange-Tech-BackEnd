@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ImoveisDisponiveis",
+            "request": "launch",
+            "mainClass": "ImoveisDisponiveis",
+            "projectName": "Orange-Tech-BackEnd_da4a8ebd"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "main",
+            "projectName": "Orange-Tech-BackEnd_da4a8ebd"
+        },
+        {
+            "type": "java",
+            "name": "Launch McDonalds",
+            "request": "launch",
+            "mainClass": "McDonalds",
+            "projectName": "Orange-Tech-BackEnd_da4a8ebd"
+        },
+        {
+            "type": "java",
+            "name": "Launch DcDonalds",
+            "request": "launch",
+            "mainClass": "DcDonalds",
+            "projectName": "Orange-Tech-BackEnd_da4a8ebd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Orange-Tech-BackEnd_da4a8ebd"
+        },
+        {
+            "type": "java",
+            "name": "Launch DcMonalds",
+            "request": "launch",
+            "mainClass": "DcMonalds",
+            "projectName": "Orange-Tech-BackEnd_da4a8ebd"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
