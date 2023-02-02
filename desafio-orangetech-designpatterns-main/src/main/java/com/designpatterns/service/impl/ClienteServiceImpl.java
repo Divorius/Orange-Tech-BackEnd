@@ -12,11 +12,7 @@ import com.designpatterns.repository.EnderecoRepository;
 import com.designpatterns.service.ClienteService;
 import com.designpatterns.service.ViaCepService;
 
-/**
- * 
- * @author joanaleoni
- *
- */
+
 @Service
 public class ClienteServiceImpl implements ClienteService {
 	
