@@ -2,11 +2,7 @@ package com.designpatterns.service;
 
 import com.designpatterns.model.Cliente;
 
-/**
- * 
- * @author joanaleoni
- *
- */
+
 public interface ClienteService {
 	Iterable<Cliente> buscarTodos();
 	Cliente buscarPorId(Long id);
