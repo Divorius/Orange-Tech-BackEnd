@@ -1,0 +1,117 @@
+package br.com.bootcamp.model;
+
+import br.com.bootcamp.utils.DateUtils;
+import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class Bootcamp {
+    private int id;
+    private String nome;
+    private String descricao;
+    private final LocalDate dataInicial = LocalDate.now();
+    private final LocalDate dataFinal = dataInicial.plusDays(45);
+    private Set<Dev> devsInscritos = new HashSet<>();
+    private Set<Conteudo> conteudos = new LinkedHashSet<>();
+    
+    public Bootcamp(){}
+
+    public Bootcamp(int id, String nome, String descricao) {
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public LocalDate getDataInicial() {
+        return dataInicial;
+    }
+
+    public LocalDate getDataFinal() {
+        return dataFinal;
+    }
+    
+    public Set<Dev> getDevsInscritos() {
+        return devsInscritos;
+    }
+
+    public Set<Conteudo> getConteudos() {
+        return conteudos;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 79 * hash + this.id;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Bootcamp other = (Bootcamp) obj;
+        return this.id == other.id;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("ID: ").append(id).append("\n");
+        sb.append("Nome: ").append(nome).append("\n");
+        sb.append("Descrição: ").append(descricao).append("\n");
+        sb.append("Data inicial: ").append(dataInicial.format(DateUtils.FORMATTER)).append("\n");
+        sb.append("Data final: ").append(dataFinal.format(DateUtils.FORMATTER)).append("\n");
+        
+        sb.append("\n-- Devs inscritos --").append("\n");        
+        if(this.devsInscritos.size() == 0){
+            sb.append("Ainda não há devs inscritos").append("\n");
+        } else {            
+            for (Dev dev : this.devsInscritos) {
+                sb.append(dev.getNome()).append("\n");
+            }
+        }        
+
+        sb.append("\n-- Conteúdos --").append("\n");
+        if(this.conteudos.size() == 0){
+            sb.append("Ainda não há conteúdos cadastrados").append("\n");
+        } else {
+            for (Conteudo c: this.conteudos) {
+                sb.append(c.getTitulo()).append("\n");
+            }
+        }        
+
+        return sb.toString();
+    }
+}
